@@ -10,21 +10,30 @@
           list-style-type: none;
           margin: 0;
           padding: 0;
-          width: 200px;
-          background-color: #f1f1f1;
+          overflow: hidden;
+          border: 1px solid #e7e7e7;
+          background-color: #f3f3f3;
+        }
+        
+        li {
+          float: left;
         }
         
         li a {
           display: block;
-          color: #000;
-          padding: 8px 16px;
+          color: rgb(0, 0, 0);
+          text-align: center;
+          padding: 14px 16px;
           text-decoration: none;
         }
         
-        /* Change the link color on hover */
-        li a:hover {
-          background-color: #555;
+        li a:hover:not(.active) {
+          background-color: rgb(249, 156, 208);
+        }
+        
+        li a.active {
           color: white;
+          background-color: #04AA6D;
         }
         </style> 
     <ul>
